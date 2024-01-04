@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitha Ghor</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h2>Please fill up the form for pitha</h2>
+        <form>
+            <!-- text input -->
+            <label for="name"> Your Name:
+                <input type="text" id="name" placeholder="Your Name">
+            </label>
+            <!-- email input -->
+            <label for="email"> Your Email:
+                <input type="email" id="email" placeholder="Your email">
+            </label>
+            <!-- text input -->
+            <label for="phone"> Your Phone:
+                <input type="text" id="phone" placeholder="Your Phone">
+            </label>
+
+            <!-- যদি border সহ কোন field এর দরকার হয় তাহলে field set use করা হয়। Specially radio checkbox এর ক্ষেত্রে। -->
+            <fieldset>
+                <!-- যদি radio button কয়েকটার মধ্যে যেকোনো একটা select করতে হয়ে তাহলে radio button গুলোর name same রাখতে হবে। -->
+                <legend>Select a pitha</legend>
+                <label for="chitoy">
+                    <input type="radio" name="phita" id="chitoy"> Chitoy
+                </label>
+                <label for="vapa">
+                    <input type="radio" name="phita" id="vapa"> Vapa
+                </label>
+            </fieldset>
+            <!-- checkbox for select multiple  Items -->
+            <!-- multiple items একই সাথে select করা জন্য ব্যবহার করা হয়। -->
+            <fieldset>
+                <legend>Pick one or more vorta</legend>
+                <label for="shutki">
+                    <input type="checkbox" name="vorta" id="shutki"> Shutki
+                </label>
+                <label for="shorisha">
+                    <input type="checkbox" name="vorta" id="shorisha"> Shorisha
+                </label>
+                <label for="chili">
+                    <input type="checkbox" name="vorta" id="chili"> Chili
+                </label>
+            </fieldset>
+            <!-- textarea এর জন্য field set ব্যবহার করা যায়। text area তে column row use করা যায়।-->
+            <fieldset>
+                <legend>Special Instruction</legend>
+                <textarea name="instruction" id="" cols="30" rows="5"></textarea>
+            </fieldset>
+            <!-- reset & submit input -->
+            <!-- reset input form কে refresh করে এবং submit input form কে submit করে। -->
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
