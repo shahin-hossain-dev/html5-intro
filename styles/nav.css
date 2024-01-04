@@ -16,3 +16,19 @@ nav li a {
     text-decoration: none;
     color: black;
 }
+
+/* -----------
+dropdown menu
+------------*/
+
+nav li .dropdown {
+    display: none;
+    position: absolute;
+    background-color: lightblue;
+    padding-left: 10px;
+}
+
+/* nav মধ্যে যে li আছে তাকে hover করলে, li এর immediate child class কে block করবে। */
+nav li:hover>.dropdown {
+    display: block;
+}
